@@ -7,9 +7,9 @@
 
 import UIKit
 
-class GradientColorView: UIView {
+open class GradientColorView: UIView {
     
-    func gradient(first: UIColor, second: UIColor, for view: UIView) {
+    public func gradient(first: UIColor, second: UIColor, for view: UIView) {
         let gradient = CAGradientLayer()
         gradient.colors = [first.cgColor, second.cgColor]
         gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
