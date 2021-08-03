@@ -16,5 +16,9 @@ open class GradientColorView: UIView {
         gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
         view.layer.addSublayer(gradient)
     }
+    
+    public func gradLog() {
+        print("Gradient was changed")
+    }
 }
 
